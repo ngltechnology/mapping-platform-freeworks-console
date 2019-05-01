@@ -17,6 +17,9 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 import { mainListItems, secondaryListItems } from './listItems';
 import Dashboard from "./Dashboard"
 import Quests from './Quests'
+import AddQuest from './AddQuest'
+import Report from './Report'
+import Document from './Document'
 
 import { Route } from 'react-router-dom'
 
@@ -95,7 +98,7 @@ const styles = theme => ({
 
 class App extends React.Component {
   state = {
-    open: true,
+    open: false,
   };
 
   handleDrawerOpen = () => {
@@ -165,8 +168,10 @@ class App extends React.Component {
           <div className={classes.appBarSpacer} />
 
           <Route path="/" exact component={Dashboard} />
-          <Route path="/quests" exact component={Quests} />
-
+          <Route path="/quests" component={Quests} />
+          <Route path="/addquest" component={AddQuest} />
+          <Route path="/report" component={Report} />
+          <Route path="/document" component={Document} />
         </main>
       </div>
     );

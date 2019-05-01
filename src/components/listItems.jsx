@@ -24,7 +24,7 @@ export const mainListItems = (
         <ListItemText primary="Dashboard" />  
       </ListItem>
     </Link>
-    <Link component={RouterLink} to="/Quests">
+    <Link component={RouterLink} to="/quests">
       <ListItem button>
         <ListItemIcon>
           <ShoppingCartIcon />
@@ -32,7 +32,7 @@ export const mainListItems = (
         <ListItemText primary="Quests" />
       </ListItem>
     </Link>
-    <Link component={RouterLink} to="/AddQuest">
+    <Link component={RouterLink} to="/addquest">
       <ListItem button>
         <ListItemIcon>
           <AddIcon />
@@ -46,18 +46,22 @@ export const mainListItems = (
       </ListItemIcon>
       <ListItemText primary="Customers" />
     </ListItem>
-    <ListItem button>
-      <ListItemIcon>
-        <BarChartIcon />
-      </ListItemIcon>
-      <ListItemText primary="Reports" />
-    </ListItem>
-    <ListItem button>
-      <ListItemIcon>
-        <LayersIcon />
-      </ListItemIcon>
-      <ListItemText primary="Integrations" />
-    </ListItem>
+    <Link component={RouterLink} to="/report">
+      <ListItem button>
+        <ListItemIcon>
+          <BarChartIcon />
+        </ListItemIcon>
+        <ListItemText primary="Reports" />
+      </ListItem>
+    </Link>
+    <Link component={RouterLink} to="/document">
+      <ListItem button>
+        <ListItemIcon>
+          <LayersIcon />
+        </ListItemIcon>
+        <ListItemText primary="Documents" />
+      </ListItem>
+      </Link>
   </div>
 );
 
