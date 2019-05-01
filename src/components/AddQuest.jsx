@@ -1,6 +1,6 @@
 import React from "react"
 import {withStyles} from "@material-ui/core/styles"
-import { Paper, TextField } from "@material-ui/core";
+import Checkout from "./addQuest/Checkout"
 
 const Styles = {
   questForm: {
@@ -12,9 +12,7 @@ const Styles = {
 const AddQuest = classes => {
   return (
     <React.Fragment>
-      <Paper className={classes.questForm}>
-        
-      </Paper>
+      <Checkout />
     </React.Fragment>
   )
 }
