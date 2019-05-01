@@ -9,8 +9,12 @@ function AddressForm() {
   return (
     <React.Fragment>
       <Typography variant="h6" gutterBottom>
-        Shipping address
+        会社情報
       </Typography>
+          <FormControlLabel
+            control={<Checkbox color="secondary" name="saveAddress" value="yes" />}
+            label="登録の情報を使用"
+          />
       <Grid container spacing={24}>
         <Grid item xs={12} sm={6}>
           <TextField
@@ -85,10 +89,6 @@ function AddressForm() {
           />
         </Grid>
         <Grid item xs={12}>
-          <FormControlLabel
-            control={<Checkbox color="secondary" name="saveAddress" value="yes" />}
-            label="Use this address for payment details"
-          />
         </Grid>
       </Grid>
     </React.Fragment>
