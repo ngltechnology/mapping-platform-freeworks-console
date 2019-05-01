@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "freeworks-9bb68"
+  },
+  "targets": {
+    "freeworks-9bb68": {
+      "hosting": {
+        "client-console": [
+          "client-console"
+        ]
+      }
+    }
+  }
+}
