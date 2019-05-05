@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Switch, Route } from "react-router-dom"
+
 import classNames from 'classnames';
 import { withStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -20,8 +22,6 @@ import Quests from './Quests'
 import AddQuest from './AddQuest'
 import Report from './Report'
 import Document from './Document'
-
-import { Route } from 'react-router-dom'
 
 const drawerWidth = 240;
 
@@ -167,11 +167,14 @@ class App extends React.Component {
         <main className={classes.content}>
           <div className={classes.appBarSpacer} />
 
-          <Route path="/" exact component={Dashboard} />
-          <Route path="/quests" component={Quests} />
-          <Route path="/addquest" component={AddQuest} />
-          <Route path="/report" component={Report} />
-          <Route path="/document" component={Document} />
+          <Switch>
+            <Route path="/" exact component={Dashboard} />
+            <Route path="/quests" component={Quests} />
+            <Route path="/addquest" component={AddQuest} />
+            <Route path="/report" component={Report} />
+            <Route path="/document" component={Document} />
+          </Switch>
+          
         </main>
       </div>
     );
