@@ -1,6 +1,6 @@
 import React from "react"
 import {withStyles} from "@material-ui/core/styles"
-import Checkout from "./addQuest/Checkout"
+import Checkout from "./Checkout"
 
 const Styles = {
   questForm: {

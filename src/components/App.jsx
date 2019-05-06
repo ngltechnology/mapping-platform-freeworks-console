@@ -16,10 +16,10 @@ import Badge from '@material-ui/core/Badge';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
-import { mainListItems, secondaryListItems } from './listItems';
-import Dashboard from "./Dashboard"
+import { mainListItems, secondaryListItems } from './dashboard/listItems';
+import Dashboard from "./dashboard/Dashboard"
 import Quests from './Quests'
-import AddQuest from './AddQuest'
+import AddQuest from './addQuest/AddQuest'
 import Report from './Report'
 import Document from './Document'
 
