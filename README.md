@@ -61,7 +61,6 @@ resource-nameはfirebase consoleから確認できるhostging先の名前
 でデプロイ
 
 
-
 ## 開発手順
 
 ### （issueを立て、）作業中にする
